@@ -13,7 +13,7 @@ workspace = true
 
 [dependencies]
 log = { workspace = true }
-codec = { package = "parity-scale-codec", version = "3.6.1", default-features = false }
+codec = { git = "https://github.com/paritytech/parity-scale-codec.git", tag = "parity-scale-codec-v3.6.1", package = "parity-scale-codec", default-features = false }
 frame-support = { path = "../../../../substrate/frame/support", default-features = false }
 frame-system = { path = "../../../../substrate/frame/system", default-features = false }
 sp-std = { path = "../../../../substrate/primitives/std", default-features = false }
