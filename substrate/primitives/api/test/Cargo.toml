@@ -22,7 +22,7 @@ sp-tracing = { path = "../../tracing" }
 sp-runtime = { path = "../../runtime" }
 sp-consensus = { path = "../../consensus/common" }
 sc-block-builder = { path = "../../../client/block-builder" }
-codec = { package = "parity-scale-codec", version = "3.6.1" }
+codec = { git = "https://github.com/paritytech/parity-scale-codec.git", tag = "parity-scale-codec-v3.6.1", package = "parity-scale-codec" }
 sp-state-machine = { path = "../../state-machine" }
 trybuild = "1.0.88"
 rustversion = "1.0.6"

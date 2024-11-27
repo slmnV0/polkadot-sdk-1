@@ -42,7 +42,7 @@ crate-type = ["cdylib", "rlib"]
 # third-party dependencies
 array-bytes = "6.1"
 clap = { version = "4.5.1", features = ["derive"], optional = true }
-codec = { package = "parity-scale-codec", version = "3.6.1" }
+codec = { git = "https://github.com/paritytech/parity-scale-codec.git", tag = "parity-scale-codec-v3.6.1", package = "parity-scale-codec" }
 serde = { features = ["derive"], workspace = true, default-features = true }
 jsonrpsee = { version = "0.22", features = ["server"] }
 futures = "0.3.21"
