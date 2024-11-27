@@ -12,7 +12,7 @@ description = "A mock network for testing pallet-contracts"
 workspace = true
 
 [dependencies]
-codec = { package = "parity-scale-codec", version = "3.6.1", default-features = false, features = ["derive", "max-encoded-len"] }
+codec = { git = "https://github.com/paritytech/parity-scale-codec.git", tag = "parity-scale-codec-v3.6.1", package = "parity-scale-codec", default-features = false, features = ["derive", "max-encoded-len"] }
 
 frame-support = { path = "../../support", default-features = false }
 frame-system = { path = "../../system", default-features = false }
